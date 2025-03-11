@@ -78,6 +78,32 @@ body {
 
 /* #endregion */
 
+/* #region Ingredients */
+
+.card__ingredients-title {
+    color: var(--prime-dark-brown);
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.card__ingredients-list {
+    list-style: none;
+}
+
+.card__ingredients-list-item {
+    padding-left: 15px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.card__ingredients-list-item::before {
+    content: '•';
+    left: 0;
+    position: absolute;
+}
+
+/* #endregion */
+
 section {
     margin: 25px 0;
 }
