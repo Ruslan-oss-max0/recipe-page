@@ -4,6 +4,7 @@
     --prime-light-rose: hsl(330, 100%, 98%);
     --prime-dark-brown: hsl(14, 45%, 36%);
     --prime-dark-stone: hsl(24, 5%, 18%);
+    --prime-light-stone: hsl(30, 10%, 34%);
     --prime-background-stone: hsl(30, 54%, 90%);
 }
 
@@ -14,5 +15,74 @@
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--prime-background-stone);
+    color: var(--prime-light-stone);
+}
+
+.card {
+    background-color: var(--prime-white);
+    width: 100vw;
+    width: 100%;
+}
+
+.card__img {
+    width: 100%;
+}
+
+.card__content {
+    padding: 20px;
+}
+
+.card__title {
+    margin: 0 auto;
+    color: var(--prime-dark-stone);
+    margin-bottom: 15px;
+}
+
+/* #region Preparation */
+
+.card__preparation {
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px 0 auto;
+}
+
+.card__preparation--rose {
+    background-color: var(--prime-light-rose);
+}
+
+.card__preparation-title {
+    color: var(--prime-dark-rose);
+    margin-bottom: 10px;
+}
+
+.card__preparation-list {
+    list-style: none;
+}
+
+.card__preparation-list-item {
+    margin-bottom: 8px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.card__preparation-list-item::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--prime-dark-rose);
+}
+
+/* #endregion */
+
+section {
+    margin: 25px 0;
+}
+
+span {
+    color: var(--prime-dark-stone);
+    font-weight: 900;
 }
