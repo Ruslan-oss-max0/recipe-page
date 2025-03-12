@@ -6,6 +6,7 @@
     --prime-dark-stone: hsl(24, 5%, 18%);
     --prime-light-stone: hsl(30, 10%, 34%);
     --prime-background-stone: hsl(30, 54%, 90%);
+    --prime-super-ligh-stone: hsl(30, 18%, 87%);
 }
 
 * {
@@ -135,6 +136,36 @@ body {
 
 /* #endregion */
 
+/* #region Nutrition */
+
+.card__nutrition-title {
+    color: var(--prime-dark-brown);
+    margin-bottom: 10px;
+}
+
+.card__nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.card__nutrition-table tr {
+    border-bottom: 1px solid var(--prime-super-ligh-stone);
+}
+
+.card__nutrition-table tr:last-child {
+    border-bottom: none;
+}
+
+.card__nutrition-table-data {
+    color: var(--prime-dark-brown);
+    font-weight: bold;
+}
+
+.table-data {
+    padding: 10px 25px;
+}
+
+/* #endregion */
 section {
     margin: 25px 0;
 }
@@ -142,4 +173,12 @@ section {
 span {
     color: var(--prime-dark-stone);
     font-weight: 900;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+hr {
+    color: var(--prime-super-ligh-stone);
 }
