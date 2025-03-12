@@ -46,7 +46,7 @@ body {
 
 .card__preparation {
     border-radius: 8px;
-    padding: 15px;
+    padding: 10px;
     margin: 20px 0 auto;
 }
 
@@ -100,6 +100,37 @@ body {
     content: '•';
     left: 0;
     position: absolute;
+}
+
+/* #endregion */
+
+/* #region Instructions */
+
+.card__instructions-title {
+    color: var(--prime-dark-brown);
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.card__instructions-list {
+    list-style: none;
+    counter-reset: instructions;
+    padding-left: 0;
+}
+
+.card__instructions-list-item {
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 30px;
+}
+
+.card__instructions-list-item::before {
+    content: counter(instructions) ".";
+    counter-increment: instructions;
+    position: absolute;
+    color: var(--prime-dark-brown);
+    left: 0;
+    font-weight: bold;
 }
 
 /* #endregion */
