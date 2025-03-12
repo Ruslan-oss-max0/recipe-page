@@ -16,9 +16,9 @@
 }
 
 body {
+    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: var(--prime-background-stone);
     color: var(--prime-light-stone);
 }
@@ -181,4 +181,21 @@ p {
 
 hr {
     color: var(--prime-super-ligh-stone);
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        align-items: center;
+    }
+
+    .card {
+        max-width: 768px;
+        width: 90%;
+        border-radius: 15px;
+        padding: 25px;
+    }
+
+    .card__img {
+        border-radius: 8px;
+    }
 }
